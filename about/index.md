@@ -13,3 +13,8 @@ coding.
 ## Is is OK to make suggestions or even submit posts or ideas?
 
 Absolutely!
+
+
+## Is is OK to just join for coffee?
+
+Yes!
