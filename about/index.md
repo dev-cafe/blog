@@ -1,6 +1,15 @@
 ---
 layout: default
-title: "About the project"
+title: "About this project"
 ---
 
-About us ...
+## About DevCafe
+
+We are Roberto Di Remigio and Radovan Bast. We enjoy nice coffee and we also
+enjoy discussing coding. And also other things. But this site is mostly about
+coding.
+
+
+## Is is OK to make suggestions or even submit posts or ideas?
+
+Absolutely!
