@@ -1,0 +1,15 @@
+<div class="listing">
+    {% if show_wip %}
+        {% for post in site.posts %}
+            {% if post.status == 'wip' %}
+                {% include post.html %}
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        {% for post in site.posts %}
+            {% if post.status != 'wip' %}
+                {% include post.html %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+</div>

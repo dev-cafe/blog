@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Branching Models and Context API
-category: posts
-published: 2017-02-08
 author: Roberto Di Remigio
 summary: Software development discussion cafè kick-off!
 ---

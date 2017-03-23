@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Branching Models
-category: posts
-published: 2017-03-01
 author: Roberto Di Remigio
 summary: Debugging the branching model
 ---
