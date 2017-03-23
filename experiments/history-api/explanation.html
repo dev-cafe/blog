@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>History API / Explanation — Warpspire Experiments</title>
+  <link rel="stylesheet" type="text/css" href="../css/base.css" />
+  <link rel="stylesheet" type="text/css" href="css/history_api.css" />
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-146426-5']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+</head>
+<body>
+  <div id="experiments-header">
+    <div class="inner">
+      <h2 class="logo"><a href="/experiments/">Warpspire Experiments</a></h2>
+      <p class="back">In relation to <a href="http://warpspire.com/talks/responsive/">Responsive web design from the future</a></p>
+    </div>
+  </div><!-- /#experiments-header -->
+
+  <div id="content" class="columns typical">
+    <ul class="column navigation">
+      <li><a href="/experiments/history-api/" class="overview-style">Overview</a></li>
+      <li><a href="/experiments/history-api/explanation" class="explanation-style selected">Explanation</a></li>
+      <li><a href="/experiments/history-api/code" class="code-style">See the Code</a></li>
+    </ul><!-- /.column.navigation -->
+
+    <div class="column main">
+      <h1>What’s the point?</h1>
+      <p>
+        I built this example to serve a few purposes.  First, I wanted to show
+        off the <strong>power of the HTML5 History API</strong>.  By using
+        <code>replaceState</code> — I'm able to change the full URL as you
+        scroll. Since <code>replaceState</code> doesn't add to the back button
+        stack, the back/forward buttons still work as expected.
+      </p>
+      <p>
+        I also wanted to show how <strong>infinite scrolling can be awesome</strong>.
+        Page numbers don’t make sense in infinite scrolling — but incremental updates do.
+        That's why this example uses <code>max_id</code> to mark your position
+        and not a page number.
+      </p>
+      <p>
+        This adds up to my version of a <strong>utopian paging example</strong>.
+        Users never have to click paging links — new content magically streams in.
+        But if you share the URL in your address bar with a friend over chat, they'll
+        see the same thing you see.
+      </p>
+
+      <p>
+        But really, it's all pretty boring. Why? Because it works like you'd
+        expect the web to work. Which is how things should be. And it's how
+        I wish infinite scrolling sites like Facebook, Twitter and Tumblr acted.
+      </p>
+
+    </div><!-- /.column.main -->
+  </div><!-- /#content -->
+  <script type="text/javascript">
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id',
+                     '4dd8683cf5a1f53796000001');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+</body>
+</html>

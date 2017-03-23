@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>History API — Warpspire Experiments</title>
+  <link rel="stylesheet" type="text/css" href="../css/base.css" />
+  <link rel="stylesheet" type="text/css" href="css/history_api.css" />
+  <script src="../javascripts/lib/jquery-1.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="javascripts/lib/handlebars.js" type="text/javascript" charset="utf-8"></script>
+  <script src="javascripts/lib/jquery.timeago.js" type="text/javascript" charset="utf-8"></script>
+  <script src="javascripts/lib/twitter_text.js" type="text/javascript" charset="utf-8"></script>
+  <script src="javascripts/lib/helpers.js" type="text/javascript" charset="utf-8"></script>
+  <script src="javascripts/app/twitter_timeline.js" type="text/javascript" charset="utf-8"></script>
+  <script src="javascripts/application.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-146426-5']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+</head>
+<body>
+  <div id="experiments-header">
+    <div class="inner">
+      <h2 class="logo"><a href="/experiments/">Warpspire Experiments</a></h2>
+      <p class="back">In relation to <a href="http://warpspire.com/talks/responsive/">Responsive web design from the future</a></p>
+    </div>
+  </div><!-- /#experiments-header -->
+
+  <div id="content" class="columns typical">
+    <ul class="column navigation">
+      <li><a href="/experiments/history-api/" class="overview-style selected">Overview</a></li>
+      <li><a href="/experiments/history-api/explanation" class="explanation-style">Explanation</a></li>
+      <li><a href="/experiments/history-api/code" class="code-style">See the Code</a></li>
+    </ul><!-- /.column.navigation -->
+
+    <div class="column main">
+      <h1>Infinite Scroll + HTML5 History API</h1>
+      <p><strong>Note: This is broken right now, as I need to update it to use the new Twitter APIs. Yay security!</strong></p>
+      <p>
+        This example shows the power of the History API when combined with infinite
+        scroll. Fluid user experience and hard linking all in one. Scroll down, click
+        a link &amp; press the back button, refresh the page — it all just works (well,
+        mostly — still needs some polish).
+      </p>
+
+      <script id="tweet-template" type="text/x-handlebars-template">
+        <div class="tweet" data-id="{{id}}">
+          <img src="{{avatar}}" class="avatar" width="72" height="72" />
+          <h4 class="author"><a href="{{author_url}}" class="handle">@{{handle}}</a> <a href="{{author_url}}" class="name">{{name}}</a></h4>
+          <p>{{{body}}}</p>
+          <p class="meta"><a href="{{permalink}}" class="timestamp" title="{{timestamp}}">{{timestamp}}</a></p>
+        </div>
+      </script>
+
+      <div id="tweets" class="js-tweets tweets" data-url="http://api.twitter.com/1/statuses/user_timeline.json?screen_name=holman">
+      </div><!-- /.tweets -->
+
+    </div><!-- /.column.main -->
+  </div><!-- /#content -->
+  <script type="text/javascript">
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id',
+                     '4dd8683cf5a1f53796000001');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+</body>
+</html>
