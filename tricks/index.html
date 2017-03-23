@@ -1,0 +1,14 @@
+---
+layout: default
+title: Tricks
+---
+
+<div class="listing">
+{% for trick in site.tricks %}
+    <div class="post">
+      <p class="date">{{ tick.date | date: "%B %e, %Y" }}</p>
+      <h2>{{ trick.title }}</h2>
+      {{ trick.content }}
+    </div>
+{% endfor %}
+</div>

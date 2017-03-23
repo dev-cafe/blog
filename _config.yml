@@ -3,3 +3,7 @@ highlighter: rouge
 permalink: /posts/:title
 rdiscount:
   extensions: [smart]
+
+collections:
+  tricks:
+    output: false
