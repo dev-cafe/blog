@@ -141,7 +141,9 @@ and isolated environment and reports the result to the code review**.  The
 pipeline can for instance trigger installation scripts in paths which have
 changed since the last deployment. If the CI pipeline reports success, the
 commit can be accepted to the upstream branch which triggers deploying the
-installation on the production system. It is then also possible to
+installation on the production system, update of the documentation, and refreshing the module
+tree. All this does not need to be done manually.
+It is then also possible to
 automatically post a tweet informing about the newly installed version or
 update the message of the day, etc. Sometimes the entire system needs to be
 reinstalled.  Fortunatelly, in this scheme this is an automatic process which
