@@ -70,7 +70,7 @@ using the right naming, to document the installation in the right place
 according to some agreed standards. In addition, not all software is currently
 covered under [EasyBuild](https://easybuild.readthedocs.io) or
 [Spack](https://computation.llnl.gov/projects/spack-hpc-package-manager) so
-sometimes one needs to default to editing old-school configure scripts. It is
+sometimes one needs to edit old-school configure scripts. It is
 very difficult for novice staff and basically impossible for external staff or
 site users to contribute installations without considerable effort for the
 staff. And whether old-school or [EasyBuild](https://easybuild.readthedocs.io)
@@ -90,8 +90,7 @@ sure *who* installed a particular software *when* and *how* precisely
 To avoid this, the entire team needs to agree on standards and these standards
 need to be documented, communicated to all staff, read, understood, and
 remembered. This requires discipline and discipline is hard to keep up on a
-very complex environment when constantly context switching between tasks and
-projects. In short, it is not too difficult to break things with best
+very complex environment. In short, it is not too difficult to break things with best
 intentions and so things do break.
 
 
@@ -120,7 +119,7 @@ need to experiment and tweak until I can fully script things." - The answer to
 this is to experiment and tweak *with scripts*. Interactive sessions are not
 easily reproducible for you or others.
 
-We wish to know who exactly installed what exactly how exactly. This is
+We wish to know precisely who installed a particular software and precisely how. This is
 achieved by tracking the installation scripts in a **Git repository**.
 Sometimes you notice that something broke on a particular day. Would be nice to
 go back to that day to figure out what we installed that day and see whether
@@ -134,7 +133,7 @@ allows to implement code review and automatize sanity checks.
 
 Installations can be carried out in your home directory as a normal user
 without any special permissions. Once you have calibrated the installation
-script and you are ready to contribute the new script via fork/ pull-request
+script, you are ready to contribute the new script via fork/ pull-request
 towards the upstream repository. **A pull request triggers a continuous
 integration (CI) runner which carries out the installation in a well defined
 and isolated environment and reports the result to the code review**.  The
