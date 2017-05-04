@@ -10,11 +10,11 @@ enjoy discussing coding. And also other things. But this site is mostly about
 coding.
 
 
-## Is is OK to make suggestions or even submit posts or ideas?
+## Is it OK to make suggestions or even submit posts or ideas?
 
 Absolutely!
 
 
-## Is is OK to just join for coffee?
+## Is it OK to just join for coffee?
 
 Yes!
