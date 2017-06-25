@@ -16,7 +16,7 @@ Set `-Wall -Wextra`, or equivalent, as your basic compiler flags, both in debug
 and in release mode.
 If you are using CMake, the [Autocmake
 project](http://autocmake.readthedocs.io/en/latest/) does it [by
-default](https://github.com/coderefinery/autocmake/pull/203)
+default](https://github.com/coderefinery/autocmake/pull/203).
 
 ## An example from the [`cnpy` library](https://github.com/robertodr/cnpy)
 
