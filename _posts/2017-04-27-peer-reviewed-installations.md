@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Peer-reviewed installation pipelines
-status: wip
 author: Radovan Bast
 summary: Reproducible and transparent installation workflow for computing centers
 ---
