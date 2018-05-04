@@ -13,7 +13,7 @@ We are making available the Docker images we use for GitLab CI or Drone CI jobs:
 
 ## DockerHub
 
-The container images are automatically built on `DockerHub` at https://hub.docker.com/u/devcafe/
+The container images are automatically built on `DockerHub` at the [DevCafe organization](https://hub.docker.com/u/devcafe/)
 `DockerHub` does not allow dashes in user and organization names. It's **devcafe**, not **dev-cafe**! 
 
 For example, you can download the `ubuntu16.04-pgi17.4` container locally with:
